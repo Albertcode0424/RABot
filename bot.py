@@ -1,5 +1,7 @@
 import discord
 from discord.ext import commands
+from io import StringIO
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -15,5 +17,5 @@ async def 新番推薦(ctx):
     file = discord.File("A.txt", filename="新番推薦.txt")
     await ctx.send("以下是本季新番推薦：", file=file)
 
-bot.run('MTM3MDQwODAxNTQ3OTU3NDUzOA.GItiX9.mfdMpv-odDc3fhmOW_29ZbzZxNJdcL1ysF4AFU')
+bot.run(os.getenv('DISCORD_TOKEN'))
 
