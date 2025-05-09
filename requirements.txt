@@ -1,1 +1,1 @@
-discord.py
+discord.py>=2.0.0  # 支援 app_commands（Slash 指令）
