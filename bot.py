@@ -17,5 +17,5 @@ async def 新番推薦(ctx):
     file = discord.File("A.txt", filename="新番推薦.txt")
     await ctx.send("以下是本季新番推薦：", file=file)
 
-bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run(os.environ["DISCORD_TOKEN"])
 
